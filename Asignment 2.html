@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Business Landing</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: black;
+  color: white;
+}
+
+/* Landing section */
+.landing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+/* Text styles */
+.text {
+  max-width: 550px;
+}
+
+.text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: white; /* TikTok word stays white */
+}
+
+.sub {
+  color: hotpink; 
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.desc {
+  color:lightgrey;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: hotpink;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: Crimson;
+}
+
+/* Image */
+.image {
+  max-width: 300px;
+}
+.image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .landing {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image {
+    margin-top: 30px;
+  }
+}
+</style>
+</head>
+<body>
+  <section class="landing">
+    <div class="text">
+      <h1>
+        Get your business <br>
+        discovered on <br>
+        <span class="highlight">TikTok</span>
+      </h1>
+      <p class="sub">Register in 1 minute and create your first campaign</p>
+      <p class="desc">
+        Whether you're selling dog collars, candles, clothing, art, or mindfulness 
+        coaching, you can reach your ideal audience on any budget.
+      </p>
+      <a href="#" class="btn">Create an Account</a>
+    </div>
+
+    <div class="image">
+      <img src="Image/jamie-kettle-JJZrip9P_5k-unsplash.jpg" alt="Person recording on phone" width="2000px" height="550px">
+    </div>
+  </section>
+</body>
+</html>

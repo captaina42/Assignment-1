@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest App</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url("Image/Tree.png") no-repeat center/cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.3); /* dark overlay for text readability */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+/* Text */
+.text {
+  max-width: 500px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+.text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.text p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: Gainsboro;
+}
+
+/* Button */
+.btn {
+  background: white;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: lightgray;
+}
+
+/* Image */
+.image img {
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay {
+    flex-direction: column;
+    text-align: center;
+  }
+  .text {
+    margin-bottom: 30px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay">
+      <!-- Left side: text -->
+      <div class="text">
+        <div class="logo">
+          <img src="Image/forest.png" alt="Forest Logo">
+          <span>FOREST APP</span>
+        </div>
+        <h1>BEST MOBILE APP <br> EVER MADE</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu 
+          malesuada nulla. Vestibulum vel finibus erat. Duis suscipit congue 
+          ultrices. Aliquam erat volutpat.
+        </p>
+        <a href="#" class="btn">Download Now!</a>
+      </div>
+
+      <!-- Right side: image -->
+      <div class="image">
+        <img src="Image/Phone.png" height="500px" alt="Phone with forest app">
+      </div>
+    </div>
+  </section>
+</body>
+</html>
